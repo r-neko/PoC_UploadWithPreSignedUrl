@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload with Preview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    .upload-form {
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+    }
+    input[type="file"] {
+      margin: 1rem 0;
+    }
+    img {
+      max-width: 100%;
+      max-height: 200px;
+      margin: 1rem 0;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .message, .uploaded-link {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="upload-form">
+    <h1>Upload File to S3</h1>
+    <input type="file" id="fileInput" />
+    <div id="preview"></div>
+    <button id="uploadButton">Upload</button>
+    <div class="message" id="message"></div>
+    <div class="uploaded-link" id="uploadedLink"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
